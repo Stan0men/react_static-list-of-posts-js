@@ -3,8 +3,9 @@ import { CommentList } from '../CommentList/CommentList';
 import { UserInfo } from '../UserInfo/UserInfo';
 
 export const PostInfo = ({ post }) => {
-  const user = post.user;
-  const comments = post.comments;
+  const { user } = post;
+  const { comments } = post;
+
   return (
     <div className="PostInfo">
       <div className="PostInfo__header">
